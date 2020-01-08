@@ -14,13 +14,13 @@ GlobalDir=
 }
 
 {ScenarioPrivateConfig
-Path=C:\Program Files (x86)\HPE\LoadRunner\scenario\Scenario1.lrs
+Path=C:\Program Files (x86)\HPE\LoadRunner\scenario\поиск максимума.lrs
 Author=yarik
 Subject=Scenario1
 Description=
 Hosts=1
 Scripts=5
-Groups=0
+Groups=5
 Vusers=50
 Tranzactions=0
 Rendezvous=0
@@ -56,7 +56,7 @@ ScenarioStartAtTime=2096
 ScenarioStartAtTimeYear=2019
 ScenarioStartAtTimeMonth=12
 ScenarioStartAtTimeDay=15
-GIndexSortType=13344223434042
+GIndexSortType=1
 GIndexAutoSort=0
 SoftKillMode=0
 }
@@ -193,30 +193,6 @@ HostSettingsEnableTerminal=0
 
 {TestChief
 
-{s5_errbuy_buy_ticket_view
-UiName=S5_errbuy_buy_ticket_view
-Type=1
-SubType=Multi+QTWeb
-ScriptType=10
-Path=C:\Users\yarik\Documents\VuGen\Scripts\S5_errbuy_buy_ticket_view\S5_errbuy_buy_ticket_view.usr
-EmulatedLocation=None
-NVAnalytics=0
-Config=[CommandArguments]\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed="1000"\r\nEnableCustomModemSpeed="0"\r\nModemSpeed="128000"\r\n[RtsConfigfuration]\r\nAUTMode="1"\r\n[WEB]\r\nIgnoreContentCachingTypes="1"\r\nCacheAlwaysCheckForNewerPages="0"\r\nStartRecordingIsDst="0"\r\nScreenAvailWidth="1600"\r\nUseBrowserAgent=0\r\nGraphBytesPerSecond="1"\r\nNavigatorBrowserLanguage="ru-RU"\r\nGraphHitsPerSecondHttpStatusCodes="1"\r\nUTF8InputOutput="No"\r\nEnableDynatrace="0"\r\nNavigatorUserLanguage="ru-RU"\r\nAutoTransFileLine="1"\r\nRecorderWinCodePage="1251"\r\nUseCustomAgent=1\r\nLogFileWriteTraceToFile="0"\r\nProxyUseBrowser="0"\r\nLogFileWrite="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources="0"\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nResetContext="1"\r\nStartRecordingGMT="2019/12/12 23:32:42"\r\nGraphPagesPerSecond="0"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nUserHomePage="http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU"\r\nScreenWidth="1600"\r\nScreenAvailHeight="860"\r\nBrowserAcceptLanguage="ru,en-US;q=0.7,en;q=0.3"\r\nProxyHTTPSHost=\r\nWinInetReplay="0"\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nProxyNoLocal="0"\r\nSimulatePrefetchPrerender="0"\r\nProxyHTTPHost=""\r\nDisableAED=0\r\nSimulateCache="1"\r\nNavigatorSystemLanguage="ru-RU"\r\nEnableChecks="0"\r\nProxyHTTPPort="443"\r\nWebRecorderVersion="10"\r\nSupportCharset="None"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nUseDataFormatExtensions="0"\r\nProxyBypass=""\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nCacheHtmlPages="1"\r\nKeepNonTextMimeType="text/xml;text/plain"\r\nSnapshotOnErrorActive=0\r\nProxyHTTPSPort=443\r\nMaxConnections="0"\r\nScreenHeight="900"\r\nFailNonCriticalItem="0"\r\nClearCacheForSimulateNewUser="1"\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nAutomaticTransactions=1\r\nContinueOnError=0\r\nautomatic_nested_transactions="1"\r\nXlBridgeTimeout="120"\r\nUseThreads=1\r\niter_ends_val=fixed\r\nDefaultRunLogic=uspTgP.651\r\nAutomaticTransactionsPerFunc=0\r\nEncoding="ANSI"\r\niter_begins_val=fixed\r\nFailTransOnErrorMsg=0\r\n[Streaming]\r\nStreamTimeout="30"\r\nStreamSeekMethod="ByVideoSize"\r\nStreamLog="1"\r\nStreamRetryTime="10"\r\n[FILTERS]\r\nExcludeFiltersInList=\r\nFilterType=1\r\n[Log]\r\nMsgClassParameters=0\r\nLogOptions=LogBrief\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nPrintTimeStamp=0\r\nMsgClassFull=0\r\nAutoLog=1\r\nMsgClassData=0\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor=1.000000\r\nThinkTimeRandomLow=50\r\nThinkTimeRandomHigh=150\r\nLimit=1\r\nLimitFlag=0\r\n
-ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicAfterPaceMax="90,000"\r\nRunLogicAfterPaceMin="60,000"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicPaceConstAfterTime="60,000"\r\nRunLogicPaceConstTime="50,000"\r\nRunLogicPaceType="Const"\r\nRunLogicRandomPaceMax="90,000"\r\nRunLogicRandomPaceMin="60,000"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
-Param=
-TDPath=
-TDServer=
-TDDatabase=
-Platform=All
-AstraSubType=0
-Trans=S5_просмотр_купленных_билетов
-Trans=Logout
-Trans=S5_Выбор_места_вылета_и_посадки
-Trans=S5_Ввод данных карты и оплата
-Trans=S5_errbuy_buy_ticket_view
-Trans=Login
-}
-
 {s4_view_buy_ticket
 UiName=S4_view_buy_ticket
 Type=1
@@ -225,8 +201,8 @@ ScriptType=10
 Path=C:\Users\yarik\Documents\VuGen\Scripts\S4_view_buy_ticket\S4_view_buy_ticket.usr
 EmulatedLocation=None
 NVAnalytics=0
-Config=[CommandArguments]\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed="1000"\r\nEnableCustomModemSpeed="0"\r\nModemSpeed="128000"\r\n[RtsConfigfuration]\r\nAUTMode="1"\r\n[WEB]\r\nIgnoreContentCachingTypes="1"\r\nCacheAlwaysCheckForNewerPages="0"\r\nStartRecordingIsDst="0"\r\nScreenAvailWidth="1600"\r\nUseBrowserAgent=0\r\nGraphBytesPerSecond="1"\r\nNavigatorBrowserLanguage="ru-RU"\r\nGraphHitsPerSecondHttpStatusCodes="1"\r\nUTF8InputOutput="No"\r\nEnableDynatrace="0"\r\nNavigatorUserLanguage="ru-RU"\r\nAutoTransFileLine="1"\r\nRecorderWinCodePage="1251"\r\nUseCustomAgent=1\r\nLogFileWriteTraceToFile="0"\r\nProxyUseBrowser="0"\r\nLogFileWrite="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources="0"\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nResetContext="1"\r\nStartRecordingGMT="2019/12/12 23:00:21"\r\nGraphPagesPerSecond="0"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nUserHomePage="http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU"\r\nScreenWidth="1600"\r\nScreenAvailHeight="860"\r\nBrowserAcceptLanguage="ru,en-US;q=0.7,en;q=0.3"\r\nProxyHTTPSHost=\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nWinInetReplay="0"\r\nProxyNoLocal="0"\r\nSimulatePrefetchPrerender="0"\r\nProxyHTTPHost=""\r\nNavigatorSystemLanguage="ru-RU"\r\nSimulateCache="1"\r\nDisableAED=0\r\nEnableChecks="0"\r\nProxyHTTPPort="443"\r\nWebRecorderVersion="10"\r\nSupportCharset="None"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nProxyBypass=""\r\nUseDataFormatExtensions="0"\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nCacheHtmlPages="1"\r\nKeepNonTextMimeType="text/xml;text/plain"\r\nSnapshotOnErrorActive=0\r\nProxyHTTPSPort=443\r\nMaxConnections="0"\r\nScreenHeight="900"\r\nFailNonCriticalItem="0"\r\nClearCacheForSimulateNewUser="1"\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nAutomaticTransactions=1\r\nContinueOnError=0\r\nautomatic_nested_transactions="1"\r\nXlBridgeTimeout="120"\r\nUseThreads=1\r\niter_ends_val=fixed\r\nDefaultRunLogic=uspOuE.649\r\nAutomaticTransactionsPerFunc=0\r\nEncoding="ANSI"\r\niter_begins_val=fixed\r\nFailTransOnErrorMsg=0\r\n[Streaming]\r\nStreamTimeout="30"\r\nStreamSeekMethod="ByVideoSize"\r\nStreamLog="1"\r\nStreamRetryTime="10"\r\n[Log]\r\nMsgClassParameters=0\r\nLogOptions=LogBrief\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nPrintTimeStamp=0\r\nMsgClassFull=0\r\nAutoLog=1\r\nMsgClassData=0\r\n[FILTERS]\r\nExcludeFiltersInList=\r\nFilterType=1\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor=1.000000\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\nLimit=1\r\nLimitFlag=0\r\n
-ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicAfterPaceMax="90,000"\r\nRunLogicAfterPaceMin="60,000"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicPaceConstAfterTime="60,000"\r\nRunLogicPaceConstTime="58,000"\r\nRunLogicPaceType="Const"\r\nRunLogicRandomPaceMax="90,000"\r\nRunLogicRandomPaceMin="60,000"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
+Config=[CommandArguments]\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed="1000"\r\nEnableCustomModemSpeed="0"\r\nModemSpeed="128000"\r\n[RtsConfigfuration]\r\nAUTMode="1"\r\n[WEB]\r\nIgnoreContentCachingTypes="1"\r\nCacheAlwaysCheckForNewerPages="0"\r\nStartRecordingIsDst="0"\r\nScreenAvailWidth="1600"\r\nUseBrowserAgent=0\r\nGraphBytesPerSecond="1"\r\nNavigatorBrowserLanguage="ru-RU"\r\nGraphHitsPerSecondHttpStatusCodes="1"\r\nUTF8InputOutput="No"\r\nEnableDynatrace="0"\r\nNavigatorUserLanguage="ru-RU"\r\nAutoTransFileLine="1"\r\nRecorderWinCodePage="1251"\r\nUseCustomAgent=1\r\nLogFileWriteTraceToFile="0"\r\nProxyUseBrowser="0"\r\nLogFileWrite="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources="0"\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nResetContext="1"\r\nStartRecordingGMT="2019/12/12 23:00:21"\r\nGraphPagesPerSecond="0"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nUserHomePage="http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU"\r\nScreenWidth="1600"\r\nScreenAvailHeight="860"\r\nBrowserAcceptLanguage="ru,en-US;q=0.7,en;q=0.3"\r\nProxyHTTPSHost=\r\nWinInetReplay="0"\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nProxyNoLocal="0"\r\nSimulatePrefetchPrerender="0"\r\nProxyHTTPHost=""\r\nDisableAED=0\r\nSimulateCache="1"\r\nNavigatorSystemLanguage="ru-RU"\r\nEnableChecks="0"\r\nProxyHTTPPort="443"\r\nWebRecorderVersion="10"\r\nSupportCharset="None"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nUseDataFormatExtensions="0"\r\nProxyBypass=""\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nCacheHtmlPages="1"\r\nKeepNonTextMimeType="text/xml;text/plain"\r\nSnapshotOnErrorActive=0\r\nProxyHTTPSPort=443\r\nMaxConnections="0"\r\nScreenHeight="900"\r\nFailNonCriticalItem="0"\r\nClearCacheForSimulateNewUser="1"\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nAutomaticTransactions=1\r\nContinueOnError=0\r\nautomatic_nested_transactions="1"\r\nXlBridgeTimeout="120"\r\nUseThreads=1\r\niter_ends_val=fixed\r\nDefaultRunLogic=usp6Ex.629\r\nAutomaticTransactionsPerFunc=0\r\nEncoding="ANSI"\r\niter_begins_val=fixed\r\nFailTransOnErrorMsg=0\r\n[Streaming]\r\nStreamTimeout="30"\r\nStreamSeekMethod="ByVideoSize"\r\nStreamLog="1"\r\nStreamRetryTime="10"\r\n[FILTERS]\r\nExcludeFiltersInList=\r\nFilterType=1\r\n[Log]\r\nMsgClassParameters=0\r\nLogOptions=LogBrief\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nPrintTimeStamp=0\r\nMsgClassFull=0\r\nAutoLog=1\r\nMsgClassData=0\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor=1.000000\r\nThinkTimeRandomLow=50\r\nThinkTimeRandomHigh=150\r\nLimit=1\r\nLimitFlag=0\r\n
+ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicAfterPaceMax="90,000"\r\nRunLogicAfterPaceMin="60,000"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicPaceConstAfterTime="60,000"\r\nRunLogicPaceConstTime="55,000"\r\nRunLogicPaceType="Const"\r\nRunLogicRandomPaceMax="90,000"\r\nRunLogicRandomPaceMin="60,000"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
 Param=
 TDPath=
 TDServer=
@@ -235,9 +211,33 @@ Platform=All
 AstraSubType=0
 Trans=S4_просмотр_купленных_билетов
 Trans=Logout
-Trans=S4_Ввод_данных_карты_и_оплата
 Trans=S4_Выбор_места_вылета_и_посадки
+Trans=S4_Ввод_данных_карты_и_оплата
+Trans=Login
 Trans=S4_view_buy_ticket
+}
+
+{s5_errbuy_buy_ticket_view
+UiName=S5_errbuy_buy_ticket_view
+Type=1
+SubType=Multi+QTWeb
+ScriptType=10
+Path=C:\Users\yarik\Documents\VuGen\Scripts\S5_errbuy_buy_ticket_view\S5_errbuy_buy_ticket_view.usr
+EmulatedLocation=None
+NVAnalytics=0
+Config=[CommandArguments]\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed="1000"\r\nEnableCustomModemSpeed="0"\r\nModemSpeed="128000"\r\n[RtsConfigfuration]\r\nAUTMode="1"\r\n[WEB]\r\nIgnoreContentCachingTypes="1"\r\nCacheAlwaysCheckForNewerPages="0"\r\nStartRecordingIsDst="0"\r\nScreenAvailWidth="1600"\r\nUseBrowserAgent=0\r\nGraphBytesPerSecond="1"\r\nNavigatorBrowserLanguage="ru-RU"\r\nGraphHitsPerSecondHttpStatusCodes="1"\r\nUTF8InputOutput="No"\r\nEnableDynatrace="0"\r\nNavigatorUserLanguage="ru-RU"\r\nAutoTransFileLine="1"\r\nRecorderWinCodePage="1251"\r\nUseCustomAgent=1\r\nLogFileWriteTraceToFile="0"\r\nProxyUseBrowser="0"\r\nLogFileWrite="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources="0"\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nResetContext="1"\r\nStartRecordingGMT="2019/12/12 23:32:42"\r\nGraphPagesPerSecond="0"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nUserHomePage="http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU"\r\nScreenWidth="1600"\r\nScreenAvailHeight="860"\r\nBrowserAcceptLanguage="ru,en-US;q=0.7,en;q=0.3"\r\nProxyHTTPSHost=\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nWinInetReplay="0"\r\nProxyNoLocal="0"\r\nSimulatePrefetchPrerender="0"\r\nProxyHTTPHost=""\r\nNavigatorSystemLanguage="ru-RU"\r\nSimulateCache="1"\r\nDisableAED=0\r\nEnableChecks="0"\r\nProxyHTTPPort="443"\r\nWebRecorderVersion="10"\r\nSupportCharset="None"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nProxyBypass=""\r\nUseDataFormatExtensions="0"\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nCacheHtmlPages="1"\r\nKeepNonTextMimeType="text/xml;text/plain"\r\nSnapshotOnErrorActive=0\r\nProxyHTTPSPort=443\r\nMaxConnections="0"\r\nScreenHeight="900"\r\nFailNonCriticalItem="0"\r\nClearCacheForSimulateNewUser="1"\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nAutomaticTransactions=1\r\nContinueOnError=0\r\nautomatic_nested_transactions="1"\r\nXlBridgeTimeout="120"\r\nUseThreads=1\r\niter_ends_val=fixed\r\nDefaultRunLogic=uspgyQ.627\r\nAutomaticTransactionsPerFunc=0\r\nEncoding="ANSI"\r\niter_begins_val=fixed\r\nFailTransOnErrorMsg=0\r\n[Streaming]\r\nStreamTimeout="30"\r\nStreamSeekMethod="ByVideoSize"\r\nStreamLog="1"\r\nStreamRetryTime="10"\r\n[Log]\r\nMsgClassParameters=0\r\nLogOptions=LogBrief\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nPrintTimeStamp=0\r\nMsgClassFull=0\r\nAutoLog=1\r\nMsgClassData=0\r\n[FILTERS]\r\nExcludeFiltersInList=\r\nFilterType=1\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor=1.000000\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\nLimit=1\r\nLimitFlag=0\r\n
+ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicAfterPaceMax="90,000"\r\nRunLogicAfterPaceMin="60,000"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicPaceConstAfterTime="60,000"\r\nRunLogicPaceConstTime="47,000"\r\nRunLogicPaceType="Const"\r\nRunLogicRandomPaceMax="90,000"\r\nRunLogicRandomPaceMin="60,000"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
+Param=
+TDPath=
+TDServer=
+TDDatabase=
+Platform=All
+AstraSubType=0
+Trans=S5_просмотр_купленных_билетов
+Trans=Logout
+Trans=S5_Ввод данных карты и оплата
+Trans=S5_Выбор_места_вылета_и_посадки
+Trans=S5_errbuy_buy_ticket_view
 Trans=Login
 }
 
@@ -249,8 +249,8 @@ ScriptType=10
 Path=C:\Users\yarik\Documents\VuGen\Scripts\S3_view_tickets\S3_view_tickets.usr
 EmulatedLocation=None
 NVAnalytics=0
-Config=[CommandArguments]\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed="1000"\r\nEnableCustomModemSpeed="0"\r\nModemSpeed="128000"\r\n[RtsConfigfuration]\r\nAUTMode="1"\r\n[WEB]\r\nIgnoreContentCachingTypes="1"\r\nCacheAlwaysCheckForNewerPages="0"\r\nStartRecordingIsDst="0"\r\nScreenAvailWidth="1600"\r\nUseBrowserAgent=0\r\nGraphBytesPerSecond="1"\r\nNavigatorBrowserLanguage="ru-RU"\r\nGraphHitsPerSecondHttpStatusCodes="1"\r\nUTF8InputOutput="No"\r\nEnableDynatrace="0"\r\nNavigatorUserLanguage="ru-RU"\r\nAutoTransFileLine="1"\r\nRecorderWinCodePage="1251"\r\nUseCustomAgent=1\r\nLogFileWriteTraceToFile="0"\r\nProxyUseBrowser="0"\r\nLogFileWrite="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources="0"\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nResetContext="1"\r\nStartRecordingGMT="2019/12/12 22:20:29"\r\nGraphPagesPerSecond="0"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nUserHomePage="http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU"\r\nScreenWidth="1600"\r\nScreenAvailHeight="860"\r\nBrowserAcceptLanguage="ru,en-US;q=0.7,en;q=0.3"\r\nProxyHTTPSHost=\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nWinInetReplay="0"\r\nProxyNoLocal="0"\r\nSimulatePrefetchPrerender="0"\r\nProxyHTTPHost=""\r\nNavigatorSystemLanguage="ru-RU"\r\nSimulateCache="1"\r\nDisableAED=0\r\nEnableChecks="0"\r\nProxyHTTPPort="443"\r\nWebRecorderVersion="10"\r\nSupportCharset="None"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nProxyBypass=""\r\nUseDataFormatExtensions="0"\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nCacheHtmlPages="1"\r\nKeepNonTextMimeType="text/xml;text/plain"\r\nSnapshotOnErrorActive=0\r\nProxyHTTPSPort=443\r\nMaxConnections="0"\r\nScreenHeight="900"\r\nFailNonCriticalItem="0"\r\nClearCacheForSimulateNewUser="1"\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nAutomaticTransactions=1\r\nContinueOnError=0\r\nautomatic_nested_transactions="1"\r\nXlBridgeTimeout="120"\r\nUseThreads=1\r\niter_ends_val=fixed\r\nDefaultRunLogic=uspyTY.653\r\nAutomaticTransactionsPerFunc=0\r\nEncoding="ANSI"\r\niter_begins_val=fixed\r\nFailTransOnErrorMsg=0\r\n[Streaming]\r\nStreamTimeout="30"\r\nStreamSeekMethod="ByVideoSize"\r\nStreamLog="1"\r\nStreamRetryTime="10"\r\n[Log]\r\nMsgClassParameters=0\r\nLogOptions=LogBrief\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nPrintTimeStamp=0\r\nMsgClassFull=0\r\nAutoLog=1\r\nMsgClassData=0\r\n[FILTERS]\r\nExcludeFiltersInList=\r\nFilterType=1\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor=1.000000\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\nLimit=15\r\nLimitFlag=1\r\n
-ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicAfterPaceMax="90,000"\r\nRunLogicAfterPaceMin="60,000"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicPaceConstAfterTime="60,000"\r\nRunLogicPaceConstTime="54,000"\r\nRunLogicPaceType="Const"\r\nRunLogicRandomPaceMax="90,000"\r\nRunLogicRandomPaceMin="60,000"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
+Config=[CommandArguments]\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed="1000"\r\nEnableCustomModemSpeed="0"\r\nModemSpeed="128000"\r\n[RtsConfigfuration]\r\nAUTMode="1"\r\n[WEB]\r\nIgnoreContentCachingTypes="1"\r\nCacheAlwaysCheckForNewerPages="0"\r\nStartRecordingIsDst="0"\r\nScreenAvailWidth="1600"\r\nUseBrowserAgent=0\r\nGraphBytesPerSecond="1"\r\nNavigatorBrowserLanguage="ru-RU"\r\nGraphHitsPerSecondHttpStatusCodes="1"\r\nUTF8InputOutput="No"\r\nEnableDynatrace="0"\r\nNavigatorUserLanguage="ru-RU"\r\nAutoTransFileLine="1"\r\nRecorderWinCodePage="1251"\r\nUseCustomAgent=1\r\nLogFileWriteTraceToFile="0"\r\nProxyUseBrowser="0"\r\nLogFileWrite="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources="0"\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nResetContext="1"\r\nStartRecordingGMT="2019/12/12 22:20:29"\r\nGraphPagesPerSecond="0"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nUserHomePage="http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU"\r\nScreenWidth="1600"\r\nScreenAvailHeight="860"\r\nBrowserAcceptLanguage="ru,en-US;q=0.7,en;q=0.3"\r\nProxyHTTPSHost=\r\nWinInetReplay="0"\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nProxyNoLocal="0"\r\nSimulatePrefetchPrerender="0"\r\nProxyHTTPHost=""\r\nDisableAED=0\r\nSimulateCache="1"\r\nNavigatorSystemLanguage="ru-RU"\r\nEnableChecks="0"\r\nProxyHTTPPort="443"\r\nWebRecorderVersion="10"\r\nSupportCharset="None"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nUseDataFormatExtensions="0"\r\nProxyBypass=""\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nCacheHtmlPages="1"\r\nKeepNonTextMimeType="text/xml;text/plain"\r\nSnapshotOnErrorActive=0\r\nProxyHTTPSPort=443\r\nMaxConnections="0"\r\nScreenHeight="900"\r\nFailNonCriticalItem="0"\r\nClearCacheForSimulateNewUser="1"\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nAutomaticTransactions=1\r\nContinueOnError=0\r\nautomatic_nested_transactions="1"\r\nXlBridgeTimeout="120"\r\nUseThreads=1\r\niter_ends_val=fixed\r\nDefaultRunLogic=uspN40.631\r\nAutomaticTransactionsPerFunc=0\r\nEncoding="ANSI"\r\niter_begins_val=fixed\r\nFailTransOnErrorMsg=0\r\n[Streaming]\r\nStreamTimeout="30"\r\nStreamSeekMethod="ByVideoSize"\r\nStreamLog="1"\r\nStreamRetryTime="10"\r\n[FILTERS]\r\nExcludeFiltersInList=\r\nFilterType=1\r\n[Log]\r\nMsgClassParameters=0\r\nLogOptions=LogBrief\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nPrintTimeStamp=0\r\nMsgClassFull=0\r\nAutoLog=1\r\nMsgClassData=0\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor=1.000000\r\nThinkTimeRandomLow=50\r\nThinkTimeRandomHigh=150\r\nLimit=15\r\nLimitFlag=1\r\n
+ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicAfterPaceMax="90,000"\r\nRunLogicAfterPaceMin="60,000"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicPaceConstAfterTime="60,000"\r\nRunLogicPaceConstTime="50,000"\r\nRunLogicPaceType="Const"\r\nRunLogicRandomPaceMax="90,000"\r\nRunLogicRandomPaceMin="60,000"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
 Param=
 TDPath=
 TDServer=
@@ -272,8 +272,8 @@ ScriptType=10
 Path=C:\Users\yarik\Documents\VuGen\Scripts\S2_buy_2tickets\S2_buy_2tickets.usr
 EmulatedLocation=None
 NVAnalytics=0
-Config=[CommandArguments]\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed="1000"\r\nEnableCustomModemSpeed="0"\r\nModemSpeed="128000"\r\n[RtsConfigfuration]\r\nAUTMode="1"\r\n[WEB]\r\nIgnoreContentCachingTypes="1"\r\nCacheAlwaysCheckForNewerPages="0"\r\nStartRecordingIsDst="0"\r\nScreenAvailWidth="1600"\r\nUseBrowserAgent=0\r\nGraphBytesPerSecond="1"\r\nNavigatorBrowserLanguage="ru-RU"\r\nGraphHitsPerSecondHttpStatusCodes="1"\r\nUTF8InputOutput="No"\r\nEnableDynatrace="0"\r\nNavigatorUserLanguage="ru-RU"\r\nAutoTransFileLine="1"\r\nRecorderWinCodePage="1251"\r\nUseCustomAgent=1\r\nLogFileWriteTraceToFile="0"\r\nProxyUseBrowser="0"\r\nLogFileWrite="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources="0"\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nResetContext="1"\r\nStartRecordingGMT="2019/12/12 20:52:05"\r\nGraphPagesPerSecond="0"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nUserHomePage="http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU"\r\nScreenWidth="1600"\r\nScreenAvailHeight="860"\r\nBrowserAcceptLanguage="ru,en-US;q=0.7,en;q=0.3"\r\nProxyHTTPSHost=\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nWinInetReplay="0"\r\nProxyNoLocal="0"\r\nSimulatePrefetchPrerender="0"\r\nProxyHTTPHost=""\r\nNavigatorSystemLanguage="ru-RU"\r\nSimulateCache="1"\r\nDisableAED=0\r\nEnableChecks="0"\r\nProxyHTTPPort="443"\r\nWebRecorderVersion="10"\r\nSupportCharset="None"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nProxyBypass=""\r\nUseDataFormatExtensions="0"\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nCacheHtmlPages="1"\r\nKeepNonTextMimeType="text/xml;text/plain"\r\nSnapshotOnErrorActive=0\r\nProxyHTTPSPort=443\r\nMaxConnections="0"\r\nScreenHeight="900"\r\nFailNonCriticalItem="0"\r\nClearCacheForSimulateNewUser="1"\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nAutomaticTransactions=1\r\nContinueOnError=0\r\nautomatic_nested_transactions="1"\r\nXlBridgeTimeout="120"\r\nUseThreads=1\r\niter_ends_val=fixed\r\nDefaultRunLogic=uspRuj.655\r\nAutomaticTransactionsPerFunc=0\r\nEncoding="ANSI"\r\niter_begins_val=fixed\r\nFailTransOnErrorMsg=0\r\n[Streaming]\r\nStreamTimeout="30"\r\nStreamSeekMethod="ByVideoSize"\r\nStreamLog="1"\r\nStreamRetryTime="10"\r\n[Log]\r\nMsgClassParameters=0\r\nLogOptions=LogBrief\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nPrintTimeStamp=0\r\nMsgClassFull=0\r\nAutoLog=1\r\nMsgClassData=0\r\n[FILTERS]\r\nExcludeFiltersInList=\r\nFilterType=1\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor=1.000000\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\nLimit=1\r\nLimitFlag=0\r\n
-ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicAfterPaceMax="90,000"\r\nRunLogicAfterPaceMin="60,000"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicPaceConstAfterTime="60,000"\r\nRunLogicPaceConstTime="33,000"\r\nRunLogicPaceType="Const"\r\nRunLogicRandomPaceMax="90,000"\r\nRunLogicRandomPaceMin="60,000"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
+Config=[CommandArguments]\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed="1000"\r\nEnableCustomModemSpeed="0"\r\nModemSpeed="128000"\r\n[RtsConfigfuration]\r\nAUTMode="1"\r\n[WEB]\r\nIgnoreContentCachingTypes="1"\r\nCacheAlwaysCheckForNewerPages="0"\r\nStartRecordingIsDst="0"\r\nScreenAvailWidth="1600"\r\nUseBrowserAgent=0\r\nGraphBytesPerSecond="1"\r\nNavigatorBrowserLanguage="ru-RU"\r\nGraphHitsPerSecondHttpStatusCodes="1"\r\nUTF8InputOutput="No"\r\nEnableDynatrace="0"\r\nNavigatorUserLanguage="ru-RU"\r\nAutoTransFileLine="1"\r\nRecorderWinCodePage="1251"\r\nUseCustomAgent=1\r\nLogFileWriteTraceToFile="0"\r\nProxyUseBrowser="0"\r\nLogFileWrite="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources="0"\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nResetContext="1"\r\nStartRecordingGMT="2019/12/12 20:52:05"\r\nGraphPagesPerSecond="0"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nUserHomePage="http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU"\r\nScreenWidth="1600"\r\nScreenAvailHeight="860"\r\nBrowserAcceptLanguage="ru,en-US;q=0.7,en;q=0.3"\r\nProxyHTTPSHost=\r\nWinInetReplay="0"\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nProxyNoLocal="0"\r\nSimulatePrefetchPrerender="0"\r\nProxyHTTPHost=""\r\nDisableAED=0\r\nSimulateCache="1"\r\nNavigatorSystemLanguage="ru-RU"\r\nEnableChecks="0"\r\nProxyHTTPPort="443"\r\nWebRecorderVersion="10"\r\nSupportCharset="None"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nUseDataFormatExtensions="0"\r\nProxyBypass=""\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nCacheHtmlPages="1"\r\nKeepNonTextMimeType="text/xml;text/plain"\r\nSnapshotOnErrorActive=0\r\nProxyHTTPSPort=443\r\nMaxConnections="0"\r\nScreenHeight="900"\r\nFailNonCriticalItem="0"\r\nClearCacheForSimulateNewUser="1"\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nAutomaticTransactions=1\r\nContinueOnError=0\r\nautomatic_nested_transactions="1"\r\nXlBridgeTimeout="120"\r\nUseThreads=1\r\niter_ends_val=fixed\r\nDefaultRunLogic=uspQar.633\r\nAutomaticTransactionsPerFunc=0\r\nEncoding="ANSI"\r\niter_begins_val=fixed\r\nFailTransOnErrorMsg=0\r\n[Streaming]\r\nStreamTimeout="30"\r\nStreamSeekMethod="ByVideoSize"\r\nStreamLog="1"\r\nStreamRetryTime="10"\r\n[FILTERS]\r\nExcludeFiltersInList=\r\nFilterType=1\r\n[Log]\r\nMsgClassParameters=0\r\nLogOptions=LogBrief\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nPrintTimeStamp=0\r\nMsgClassFull=0\r\nAutoLog=1\r\nMsgClassData=0\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor=1.000000\r\nThinkTimeRandomLow=50\r\nThinkTimeRandomHigh=150\r\nLimit=1\r\nLimitFlag=0\r\n
+ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicAfterPaceMax="90,000"\r\nRunLogicAfterPaceMin="60,000"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicPaceConstAfterTime="60,000"\r\nRunLogicPaceConstTime="34,000"\r\nRunLogicPaceType="Const"\r\nRunLogicRandomPaceMax="90,000"\r\nRunLogicRandomPaceMin="60,000"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
 Param=
 TDPath=
 TDServer=
@@ -282,8 +282,8 @@ Platform=All
 AstraSubType=0
 Trans=S2_buy_2tickets
 Trans=Logout
-Trans=S2_Выбор_места_вылета_и_посадки
 Trans=S2_Ввод_данных_карты_и_оплата
+Trans=S2_Выбор_места_вылета_и_посадки
 Trans=Login
 }
 
@@ -295,18 +295,18 @@ ScriptType=10
 Path=C:\Users\yarik\Documents\VuGen\Scripts\S1_buy_ticket\S1_buy_ticket.usr
 EmulatedLocation=None
 NVAnalytics=0
-Config=[CommandArguments]\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed="1000"\r\nEnableCustomModemSpeed="0"\r\nModemSpeed="128000"\r\n[RtsConfigfuration]\r\nAUTMode="1"\r\n[WEB]\r\nCacheAlwaysCheckForNewerPages="0"\r\nAnalogMode="0"\r\nSearchForImages="1"\r\nProxyPassword=""\r\nEnableChecks="0"\r\nAutoTransFileLine="1"\r\nGraphHitsPerSecondHttpStatusCodes="1"\r\nNavigatorUserLanguage="ru-RU"\r\nNavigatorBrowserLanguage="ru-RU"\r\nBrowserAcceptLanguage="ru,en-US;q=0.7,en;q=0.3"\r\nLogFileWrite="0"\r\nEnableDynatrace="0"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nProxyUserName=""\r\nSnapshotOnErrorActive=0\r\nScreenAvailHeight="860"\r\nRecorderWinCodePage="1251"\r\nProxyNoLocal="0"\r\nProxyUseProxy="0"\r\nCacheHtmlPages="1"\r\nStartRecordingIsDst="0"\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nDisableAED=0\r\nProxyHTTPSPort=443\r\nKeepAlive="Yes"\r\nSaveSnapshotResources="0"\r\nFailNonCriticalItem="0"\r\nUseCustomAgent=1\r\nGraphBytesPerSecond="1"\r\nProxyHTTPPort="443"\r\nMaxConnections="0"\r\nNavigatorSystemLanguage="ru-RU"\r\nUseDataFormatExtensions="0"\r\nProxyHTTPSHost=\r\nLogFileWriteTraceToFile="0"\r\nUserHomePage="http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU"\r\nClearCacheForSimulateNewUser="1"\r\nScreenHeight="900"\r\nProxyUseProxyServer="0"\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nSupportCharset="None"\r\nBrowserLanguageCode=""\r\nSimulateCache="1"\r\nStartRecordingGMT="2019/12/12 18:59:28"\r\nResetContext="1"\r\nIgnoreContentCachingTypes="1"\r\nUTF8InputOutput="No"\r\nBrowser_Type="Microsoft Internet Explorer"\r\nSimulatePrefetchPrerender="0"\r\nScreenWidth="1600"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nWinInetReplay="0"\r\nProxyAutoConfigScriptURL=""\r\nGraphPagesPerSecond="0"\r\nScreenAvailWidth="1600"\r\nProxyUseBrowser="0"\r\nProxyHTTPHost=""\r\nBrowserUserAgent="Mozilla/5.0 (compatible; MSIE 10.0; Windows; Trident/6.0)"\r\nHttpVer="1.1"\r\nProxyBypass=""\r\nBrowserVer="10.0"\r\nWebRecorderVersion="10"\r\nKeepNonTextMimeType="text/xml;text/plain"\r\nBrowserPlatform="Windows"\r\nUseBrowserAgent=0\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nAutomaticTransactions=1\r\nContinueOnError=0\r\nautomatic_nested_transactions="1"\r\nXlBridgeTimeout="120"\r\nUseThreads=1\r\niter_ends_val=fixed\r\nDefaultRunLogic=uspD3k.657\r\nAutomaticTransactionsPerFunc=0\r\nEncoding="ANSI"\r\niter_begins_val=fixed\r\nFailTransOnErrorMsg=0\r\n[Streaming]\r\nStreamTimeout="30"\r\nStreamSeekMethod="ByVideoSize"\r\nStreamLog="1"\r\nStreamRetryTime="10"\r\n[Log]\r\nMsgClassParameters=0\r\nLogOptions=LogBrief\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nPrintTimeStamp=0\r\nMsgClassFull=0\r\nAutoLog=1\r\nMsgClassData=0\r\nLogDetail="0"\r\n[FILTERS]\r\nExcludeFiltersInList=\r\nFilterType=1\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor=5.000000\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\nLimit=1\r\nLimitFlag=0\r\n
-ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicAfterPaceMax="90,000"\r\nRunLogicAfterPaceMin="60,000"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicPaceConstAfterTime="60,000"\r\nRunLogicPaceConstTime="20,000"\r\nRunLogicPaceType="Const"\r\nRunLogicRandomPaceMax="90,000"\r\nRunLogicRandomPaceMin="60,000"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
+Config=[CommandArguments]\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed="1000"\r\nEnableCustomModemSpeed="0"\r\nModemSpeed="128000"\r\n[RtsConfigfuration]\r\nAUTMode="1"\r\n[WEB]\r\nCacheAlwaysCheckForNewerPages="0"\r\nAnalogMode="0"\r\nSearchForImages="1"\r\nProxyPassword=""\r\nEnableChecks="0"\r\nAutoTransFileLine="1"\r\nGraphHitsPerSecondHttpStatusCodes="1"\r\nNavigatorUserLanguage="ru-RU"\r\nNavigatorBrowserLanguage="ru-RU"\r\nBrowserAcceptLanguage="ru,en-US;q=0.7,en;q=0.3"\r\nLogFileWrite="0"\r\nEnableDynatrace="0"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nProxyUserName=""\r\nSnapshotOnErrorActive=0\r\nScreenAvailHeight="860"\r\nRecorderWinCodePage="1251"\r\nProxyNoLocal="0"\r\nProxyUseProxy="0"\r\nCacheHtmlPages="1"\r\nStartRecordingIsDst="0"\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nDisableAED=0\r\nProxyHTTPSPort=443\r\nKeepAlive="Yes"\r\nSaveSnapshotResources="0"\r\nFailNonCriticalItem="0"\r\nUseCustomAgent=1\r\nGraphBytesPerSecond="1"\r\nProxyHTTPPort="443"\r\nMaxConnections="0"\r\nNavigatorSystemLanguage="ru-RU"\r\nUseDataFormatExtensions="0"\r\nProxyHTTPSHost=\r\nLogFileWriteTraceToFile="0"\r\nUserHomePage="http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU"\r\nClearCacheForSimulateNewUser="1"\r\nScreenHeight="900"\r\nProxyUseProxyServer="0"\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nSupportCharset="None"\r\nBrowserLanguageCode=""\r\nSimulateCache="1"\r\nStartRecordingGMT="2019/12/12 18:59:28"\r\nResetContext="1"\r\nIgnoreContentCachingTypes="1"\r\nUTF8InputOutput="No"\r\nBrowser_Type="Microsoft Internet Explorer"\r\nSimulatePrefetchPrerender="0"\r\nScreenWidth="1600"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nWinInetReplay="0"\r\nProxyAutoConfigScriptURL=""\r\nGraphPagesPerSecond="0"\r\nScreenAvailWidth="1600"\r\nProxyUseBrowser="0"\r\nProxyHTTPHost=""\r\nBrowserUserAgent="Mozilla/5.0 (compatible; MSIE 10.0; Windows; Trident/6.0)"\r\nHttpVer="1.1"\r\nProxyBypass=""\r\nBrowserVer="10.0"\r\nWebRecorderVersion="10"\r\nKeepNonTextMimeType="text/xml;text/plain"\r\nBrowserPlatform="Windows"\r\nUseBrowserAgent=0\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nAutomaticTransactions=1\r\nContinueOnError=0\r\nautomatic_nested_transactions="1"\r\nXlBridgeTimeout="120"\r\nUseThreads=1\r\niter_ends_val=fixed\r\nDefaultRunLogic=uspcg6.635\r\nAutomaticTransactionsPerFunc=0\r\nEncoding="ANSI"\r\niter_begins_val=fixed\r\nFailTransOnErrorMsg=0\r\n[Streaming]\r\nStreamTimeout="30"\r\nStreamSeekMethod="ByVideoSize"\r\nStreamLog="1"\r\nStreamRetryTime="10"\r\n[Log]\r\nMsgClassParameters=0\r\nLogOptions=LogBrief\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nPrintTimeStamp=0\r\nMsgClassFull=0\r\nAutoLog=1\r\nMsgClassData=0\r\nLogDetail="0"\r\n[FILTERS]\r\nExcludeFiltersInList=\r\nFilterType=1\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor=5.000000\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\nLimit=1\r\nLimitFlag=0\r\n
+ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicAfterPaceMax="90,000"\r\nRunLogicAfterPaceMin="60,000"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicPaceConstAfterTime="60,000"\r\nRunLogicPaceConstTime="27,000"\r\nRunLogicPaceType="Const"\r\nRunLogicRandomPaceMax="90,000"\r\nRunLogicRandomPaceMin="60,000"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
 Param=
 TDPath=
 TDServer=
 TDDatabase=
 Platform=All
 AstraSubType=0
-Trans=Logout
 Trans=S1_buy_ticket
-Trans=S1_Ввод данных карты и оплата
+Trans=Logout
 Trans=S1_Выбор_места_вылета_и_посадки
+Trans=S1_Ввод данных карты и оплата
 Trans=Login
 }
 }
@@ -314,7 +314,7 @@ Trans=Login
 {OnlineMonitor
 [GeneralData]
 DisplayerViewType=Run
-MultiPanels=NumGraphs=1,ActiveForm=-1,BaseIndex=0,CountMulties=1,Ratio0=1
+MultiPanels=NumGraphs=4,ActiveForm=-1,BaseIndex=0,CountMulties=7,Ratio0=1,"Ratio1=0,495652173913044","Ratio2=0,498899486426999","Ratio3=0,498899486426999","Ratio4=0,495652173913044","Ratio5=0,498899486426999","Ratio6=0,498899486426999"
 TreeViewVisible=1
 TreeViewWidth=221
 LegenedHeight=174
@@ -866,63 +866,63 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=50
-Measurement_0=|||12|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_0=s4_view_buy_ticket:Action:78
-Measurement_1=|||8|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_1=s3_view_tickets:Action:109
-Measurement_2=|||8|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_2=s3_view_tickets:Action:73
-Measurement_3=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_3=s4_view_buy_ticket:Action:171
-Measurement_4=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_4=s5_errbuy_buy_ticket_view:Action:31
-Measurement_5=|||6|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_5=s3_view_tickets:Action:84
-Measurement_6=|||7|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_6=s4_view_buy_ticket:Action:88
-Measurement_7=|||34|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_7=s1_buy_ticket:Action:72
-Measurement_8=|||26|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_8=s1_buy_ticket:Action:120
-Measurement_9=|||23|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_9=s4_view_buy_ticket:Action:39
-Measurement_10=|||20|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_10=s5_errbuy_buy_ticket_view:Action:176
-Measurement_11=|||7|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_11=s5_errbuy_buy_ticket_view:Action:34
-Measurement_12=|||21|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_12=s2_buy_2tickets:Action:151
-Measurement_13=|||18|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_13=s5_errbuy_buy_ticket_view:Action:228
-Measurement_14=|||27|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_14=s5_errbuy_buy_ticket_view:Action:127
-Measurement_15=|||18|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_15=s5_errbuy_buy_ticket_view:Action:57
-Measurement_16=|||4|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_16=s2_buy_2tickets:Action:69
-Measurement_17=|||3|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_17=s5_errbuy_buy_ticket_view:Action:116
-Measurement_18=|||16|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_18=s3_view_tickets:Action:34
-Measurement_19=|||15|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_19=s4_view_buy_ticket:Action:112
+MeasurementCount=53
+Measurement_0=|||8|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_0=s3_view_tickets:Action:109
+Measurement_1=|||8|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_1=s3_view_tickets:Action:73
+Measurement_2=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_2=s5_errbuy_buy_ticket_view:Action:31
+Measurement_3=|||6|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_3=s3_view_tickets:Action:84
+Measurement_4=|||7|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_4=s4_view_buy_ticket:Action:88
+Measurement_5=|||34|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_5=s1_buy_ticket:Action:72
+Measurement_6=|||26|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_6=s1_buy_ticket:Action:120
+Measurement_7=|||23|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_7=s4_view_buy_ticket:Action:39
+Measurement_8=|||20|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_8=s5_errbuy_buy_ticket_view:Action:176
+Measurement_9=|||7|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_9=s5_errbuy_buy_ticket_view:Action:34
+Measurement_10=|||21|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_10=s2_buy_2tickets:Action:151
+Measurement_11=|||18|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_11=s5_errbuy_buy_ticket_view:Action:228
+Measurement_12=|||22|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_12=s5_errbuy_buy_ticket_view:Action:177
+Measurement_13=|||27|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_13=s5_errbuy_buy_ticket_view:Action:127
+Measurement_14=|||18|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_14=s5_errbuy_buy_ticket_view:Action:57
+Measurement_15=|||4|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_15=s2_buy_2tickets:Action:69
+Measurement_16=|||3|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_16=s5_errbuy_buy_ticket_view:Action:116
+Measurement_17=|||16|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_17=s3_view_tickets:Action:34
+Measurement_18=|||15|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_18=s4_view_buy_ticket:Action:112
+Measurement_19=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_19=s5_errbuy_buy_ticket_view:Action:117
 Measurement_20=|||11|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
 MeasurementFullPath_20=s1_buy_ticket:Action:38
 Measurement_21=|||4|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
 MeasurementFullPath_21=s4_view_buy_ticket:Action:62
-Measurement_22=|||19|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_22=s4_view_buy_ticket:Action:187
-Measurement_23=|||28|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_23=s5_errbuy_buy_ticket_view:Action:213
-Measurement_24=|||10|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_24=s2_buy_2tickets:Action:249
-Measurement_25=|||5|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_25=s3_view_tickets:Action:149
-Measurement_26=|||8|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_26=s2_buy_2tickets:Action:16
-Measurement_27=|||14|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_27=s3_view_tickets:Action:16
+Measurement_22=|||8|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_22=s1_buy_ticket:Action:151
+Measurement_23=|||24|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_23=s3_view_tickets:Action:32
+Measurement_24=|||28|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_24=s5_errbuy_buy_ticket_view:Action:213
+Measurement_25=|||10|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_25=s2_buy_2tickets:Action:249
+Measurement_26=|||5|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_26=s3_view_tickets:Action:149
+Measurement_27=|||8|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_27=s2_buy_2tickets:Action:16
 Measurement_28=|||23|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
 MeasurementFullPath_28=s1_buy_ticket:Action:157
 Measurement_29=|||9|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
@@ -935,7 +935,7 @@ Measurement_32=|||3|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
 MeasurementFullPath_32=s2_buy_2tickets:Action:214
 Measurement_33=|||0|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
 MeasurementFullPath_33=s5_errbuy_buy_ticket_view:Action:92
-Measurement_34=|||7|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+Measurement_34=|||5|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
 MeasurementFullPath_34=localhost
 Measurement_35=|||25|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
 MeasurementFullPath_35=s2_buy_2tickets:Action:190
@@ -945,28 +945,34 @@ Measurement_37=|||13|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
 MeasurementFullPath_37=s2_buy_2tickets:Action:58
 Measurement_38=|||17|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
 MeasurementFullPath_38=s3_view_tickets:Action:57
-Measurement_39=|||1|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_39=s1_buy_ticket:Action:15
-Measurement_40=|||22|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_40=s1_buy_ticket:Action:62
-Measurement_41=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_41=s3_view_tickets:Action:133
-Measurement_42=|||6|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_42=s5_errbuy_buy_ticket_view:Action:152
-Measurement_43=|||30|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_43=s2_buy_2tickets:Action:166
-Measurement_44=|||31|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_44=s4_view_buy_ticket:Action:18
-Measurement_45=|||9|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_45=s5_errbuy_buy_ticket_view:Action:17
-Measurement_46=|||23|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_46=s1_buy_ticket:Action:96
-Measurement_47=|||9|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_47=s2_buy_2tickets:Action:120
-Measurement_48=|||33|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_48=s5_errbuy_buy_ticket_view:Action:68
-Measurement_49=|||26|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
-MeasurementFullPath_49=s1_buy_ticket:Action:153
+Measurement_39=|||5|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_39=s1_buy_ticket:Action:58
+Measurement_40=|||1|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_40=s1_buy_ticket:Action:15
+Measurement_41=|||22|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_41=s1_buy_ticket:Action:62
+Measurement_42=|||1|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_42=s2_buy_2tickets:Action:36
+Measurement_43=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_43=s3_view_tickets:Action:133
+Measurement_44=|||9|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_44=s5_errbuy_buy_ticket_view:Action:58
+Measurement_45=|||4|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_45=s2_buy_2tickets:Action:121
+Measurement_46=|||6|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_46=s5_errbuy_buy_ticket_view:Action:152
+Measurement_47=|||30|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_47=s2_buy_2tickets:Action:166
+Measurement_48=|||9|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_48=s5_errbuy_buy_ticket_view:Action:17
+Measurement_49=|||23|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_49=s1_buy_ticket:Action:96
+Measurement_50=|||9|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_50=s2_buy_2tickets:Action:120
+Measurement_51=|||33|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_51=s5_errbuy_buy_ticket_view:Action:68
+Measurement_52=|||26|||1|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_52=s1_buy_ticket:Action:153
 Description=Displays details about the number of errors that accrue during each second of the scenario or session step run.
 [13]
 MeasurementsDelimiter=|||
@@ -1005,7 +1011,7 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=49
+MeasurementCount=52
 Measurement_0=|||20|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
 MeasurementFullPath_0=s5_errbuy_buy_ticket_view:Action:229
 Measurement_1=|||8|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
@@ -1018,8 +1024,8 @@ Measurement_4=|||19|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribu
 MeasurementFullPath_4=s5_errbuy_buy_ticket_view:Action:228
 Measurement_5=|||1|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
 MeasurementFullPath_5=s1_buy_ticket:Action:15
-Measurement_6=|||11|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_6=s4_view_buy_ticket:Action:78
+Measurement_6=|||3|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_6=s1_buy_ticket:Action:151
 Measurement_7=|||4|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
 MeasurementFullPath_7=s4_view_buy_ticket:Action:62
 Measurement_8=|||9|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
@@ -1028,82 +1034,88 @@ Measurement_9=|||17|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribu
 MeasurementFullPath_9=s5_errbuy_buy_ticket_view:Action:57
 Measurement_10=|||6|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
 MeasurementFullPath_10=s4_view_buy_ticket:Action:88
-Measurement_11=|||33|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_11=s4_view_buy_ticket:Action:18
-Measurement_12=|||13|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_12=s5_errbuy_buy_ticket_view:Action:31
-Measurement_13=|||3|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_13=s5_errbuy_buy_ticket_view:Action:116
-Measurement_14=|||30|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_14=s2_buy_2tickets:Action:35
-Measurement_15=|||29|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_15=s2_buy_2tickets:Action:166
-Measurement_16=|||21|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_16=s2_buy_2tickets:Action:151
-Measurement_17=|||10|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_17=s1_buy_ticket:Action:38
+Measurement_11=|||13|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_11=s5_errbuy_buy_ticket_view:Action:31
+Measurement_12=|||3|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_12=s5_errbuy_buy_ticket_view:Action:116
+Measurement_13=|||30|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_13=s2_buy_2tickets:Action:35
+Measurement_14=|||29|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_14=s2_buy_2tickets:Action:166
+Measurement_15=|||21|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_15=s2_buy_2tickets:Action:151
+Measurement_16=|||10|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_16=s1_buy_ticket:Action:38
+Measurement_17=|||1|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_17=s2_buy_2tickets:Action:36
 Measurement_18=|||5|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
 MeasurementFullPath_18=s3_view_tickets:Action:149
 Measurement_19=|||16|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
 MeasurementFullPath_19=s3_view_tickets:Action:57
 Measurement_20=|||12|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
 MeasurementFullPath_20=s2_buy_2tickets:Action:58
-Measurement_21=|||2|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_21=s2_buy_2tickets:Action:95
-Measurement_22=|||3|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_22=s2_buy_2tickets:Action:69
-Measurement_23=|||7|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_23=s5_errbuy_buy_ticket_view:Action:34
-Measurement_24=|||2|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_24=s2_buy_2tickets:Action:214
-Measurement_25=|||14|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_25=s4_view_buy_ticket:Action:112
-Measurement_26=|||18|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_26=s4_view_buy_ticket:Action:187
-Measurement_27=|||25|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_27=s2_buy_2tickets:Action:190
-Measurement_28=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_28=s3_view_tickets:Action:133
-Measurement_29=|||13|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_29=s3_view_tickets:Action:16
+Measurement_21=|||23|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_21=s5_errbuy_buy_ticket_view:Action:177
+Measurement_22=|||2|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_22=s2_buy_2tickets:Action:95
+Measurement_23=|||3|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_23=s2_buy_2tickets:Action:69
+Measurement_24=|||4|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_24=s2_buy_2tickets:Action:121
+Measurement_25=|||7|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_25=s5_errbuy_buy_ticket_view:Action:34
+Measurement_26=|||2|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_26=s2_buy_2tickets:Action:214
+Measurement_27=|||14|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_27=s4_view_buy_ticket:Action:112
+Measurement_28=|||25|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_28=s2_buy_2tickets:Action:190
+Measurement_29=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_29=s3_view_tickets:Action:133
 Measurement_30=|||8|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
 MeasurementFullPath_30=s2_buy_2tickets:Action:16
 Measurement_31=|||15|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
 MeasurementFullPath_31=s3_view_tickets:Action:34
-Measurement_32=|||24|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_32=s1_buy_ticket:Action:96
-Measurement_33=|||23|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_33=s1_buy_ticket:Action:62
-Measurement_34=|||27|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_34=s5_errbuy_buy_ticket_view:Action:127
-Measurement_35=|||28|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_35=s5_errbuy_buy_ticket_view:Action:213
-Measurement_36=|||26|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_36=s1_buy_ticket:Action:120
-Measurement_37=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_37=s5_errbuy_buy_ticket_view:Action:17
-Measurement_38=|||32|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_38=s5_errbuy_buy_ticket_view:Action:68
-Measurement_39=|||24|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_39=s4_view_buy_ticket:Action:39
-Measurement_40=|||34|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_40=s1_buy_ticket:Action:72
-Measurement_41=|||22|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_41=s4_view_buy_ticket:Action:171
-Measurement_42=|||4|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_42=s4_view_buy_ticket:Action:136
-Measurement_43=|||6|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_43=s5_errbuy_buy_ticket_view:Action:152
-Measurement_44=|||7|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_44=s3_view_tickets:Action:109
-Measurement_45=|||5|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_45=s3_view_tickets:Action:84
-Measurement_46=|||9|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_46=s1_buy_ticket:Action:153
-Measurement_47=|||0|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_47=s5_errbuy_buy_ticket_view:Action:92
-Measurement_48=|||24|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
-MeasurementFullPath_48=s1_buy_ticket:Action:157
+Measurement_32=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_32=s5_errbuy_buy_ticket_view:Action:117
+Measurement_33=|||5|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_33=s1_buy_ticket:Action:58
+Measurement_34=|||24|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_34=s1_buy_ticket:Action:96
+Measurement_35=|||23|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_35=s1_buy_ticket:Action:62
+Measurement_36=|||27|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_36=s5_errbuy_buy_ticket_view:Action:127
+Measurement_37=|||32|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_37=s3_view_tickets:Action:32
+Measurement_38=|||28|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_38=s5_errbuy_buy_ticket_view:Action:213
+Measurement_39=|||26|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_39=s1_buy_ticket:Action:120
+Measurement_40=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_40=s5_errbuy_buy_ticket_view:Action:17
+Measurement_41=|||32|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_41=s5_errbuy_buy_ticket_view:Action:68
+Measurement_42=|||24|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_42=s4_view_buy_ticket:Action:39
+Measurement_43=|||34|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_43=s1_buy_ticket:Action:72
+Measurement_44=|||4|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_44=s4_view_buy_ticket:Action:136
+Measurement_45=|||6|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_45=s5_errbuy_buy_ticket_view:Action:152
+Measurement_46=|||7|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_46=s3_view_tickets:Action:109
+Measurement_47=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_47=s5_errbuy_buy_ticket_view:Action:58
+Measurement_48=|||5|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_48=s3_view_tickets:Action:84
+Measurement_49=|||9|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_49=s1_buy_ticket:Action:153
+Measurement_50=|||0|||1|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_50=s5_errbuy_buy_ticket_view:Action:92
+Measurement_51=|||24|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_51=s1_buy_ticket:Action:157
 Description=Displays details about the number of Vusers that generate errors during scenario or session step execution.
 [14]
 MeasurementsDelimiter=|||
@@ -1281,7 +1293,7 @@ AnySubPathAtStart=-1
 OpenChildGraph=0
 KeepLegendSort=0
 LegendSortDirection=1
-LegendSortByColumn=Transaction
+LegendSortByColumn=Avg
 LegendUserMovedColumn=0
 XAxisLabelsStyle=RelativeTime
 Is_On_Panel=2
@@ -1336,7 +1348,7 @@ Measurement_16=|||4|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
 MeasurementFullPath_16=S3_Выбор_места_вылета_и_посадки
 Measurement_17=|||31|||1|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
 MeasurementFullPath_17=vuser_end_Transaction
-Measurement_18=|||4|||1|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+Measurement_18=|||4|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
 MeasurementFullPath_18=S2_buy_2tickets
 Measurement_19=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
 MeasurementFullPath_19=S2_Выбор_места_вылета_и_посадки
@@ -1358,9 +1370,9 @@ Measurement_27=|||7|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
 MeasurementFullPath_27=S4_Ввод_данных_карты_и_оплата
 Measurement_28=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
 MeasurementFullPath_28=S3_itinerary
-Measurement_29=|||2|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+Measurement_29=|||2|||1|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
 MeasurementFullPath_29=Logout
-Measurement_30=|||1|||1|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+Measurement_30=|||1|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
 MeasurementFullPath_30=S5_errbuy_buy_ticket_view
 Measurement_31=|||17|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
 MeasurementFullPath_31=S5_Flights
@@ -1591,51 +1603,45 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=22
+MeasurementCount=19
 Measurement_0=|||27|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
 MeasurementFullPath_0=S5_errbuy_buy_ticket_view::Failed
-Measurement_1=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+Measurement_1=|||26|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
 MeasurementFullPath_1=S4_view_buy_ticket::Failed
 Measurement_2=|||5|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
 MeasurementFullPath_2=S2_Выбор_места_вылета_и_посадки::Failed
 Measurement_3=|||14|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
 MeasurementFullPath_3=S2_Ввод_данных_карты_и_оплата::Failed
-Measurement_4=|||25|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_4=S1_buy_ticket::Failed
-Measurement_5=|||10|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_5=S4_Выбор_места_вылета_и_посадки::Failed
-Measurement_6=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_6=Logout::Failed
-Measurement_7=|||19|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_7=S3_Flights::Failed
-Measurement_8=|||12|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_8=S5_просмотр_купленных_билетов::Failed
-Measurement_9=|||27|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_9=Login::Failed
-Measurement_10=|||15|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_10=S4_Ввод_данных_карты_и_оплата::Failed
-Measurement_11=|||11|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_11="S1_Ввод данных карты и оплата::Failed"
-Measurement_12=|||27|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_12=LogOut::Failed
-Measurement_13=|||21|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_13=Action_Transaction::Failed
-Measurement_14=|||29|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_14=S1_Выбор_места_вылета_и_посадки::Failed
-Measurement_15=|||17|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_15=S3_view_tickets::Failed
-Measurement_16=|||4|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_16=S3_просмотр_купленных_билетов::Failed
-Measurement_17=|||1|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_17=S4_просмотр_купленных_билетов::Failed
-Measurement_18=|||22|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_18=S3_Выбор_места_вылета_и_посадки::Failed
-Measurement_19=|||13|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_19="S5_Ввод данных карты и оплата::Failed"
-Measurement_20=|||26|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_20=S2_buy_2tickets::Failed
-Measurement_21=|||7|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
-MeasurementFullPath_21=S5_Выбор_места_вылета_и_посадки::Failed
+Measurement_4=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_4=Logout::Failed
+Measurement_5=|||19|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_5=S3_Flights::Failed
+Measurement_6=|||12|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_6=S5_просмотр_купленных_билетов::Failed
+Measurement_7=|||27|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_7=Login::Failed
+Measurement_8=|||15|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_8=S4_Ввод_данных_карты_и_оплата::Failed
+Measurement_9=|||11|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_9="S1_Ввод данных карты и оплата::Failed"
+Measurement_10=|||27|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_10=LogOut::Failed
+Measurement_11=|||21|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_11=Action_Transaction::Failed
+Measurement_12=|||29|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_12=S1_Выбор_места_вылета_и_посадки::Failed
+Measurement_13=|||17|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_13=S3_view_tickets::Failed
+Measurement_14=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_14=S4_просмотр_купленных_билетов::Failed
+Measurement_15=|||22|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_15=S3_Выбор_места_вылета_и_посадки::Failed
+Measurement_16=|||13|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_16="S5_Ввод данных карты и оплата::Failed"
+Measurement_17=|||2|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_17=S2_buy_2tickets::Failed
+Measurement_18=|||7|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_18=S5_Выбор_места_вылета_и_посадки::Failed
 Description=Displays the number of unsuccessful transactions performed during each second of a load test.
 [23]
 MeasurementsDelimiter=|||
@@ -1905,51 +1911,45 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=22
+MeasurementCount=19
 Measurement_0=|||8|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
 MeasurementFullPath_0=S5_Выбор_места_вылета_и_посадки
 Measurement_1=|||28|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
 MeasurementFullPath_1=LogOut
-Measurement_2=|||1|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+Measurement_2=|||21|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
 MeasurementFullPath_2=S4_просмотр_купленных_билетов
-Measurement_3=|||27|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+Measurement_3=|||2|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
 MeasurementFullPath_3=S2_buy_2tickets
 Measurement_4=|||28|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
 MeasurementFullPath_4=S5_errbuy_buy_ticket_view
 Measurement_5=|||5|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
 MeasurementFullPath_5=S2_Выбор_места_вылета_и_посадки
-Measurement_6=|||4|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_6=S3_просмотр_купленных_билетов
-Measurement_7=|||15|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_7=S4_Ввод_данных_карты_и_оплата
-Measurement_8=|||18|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_8=S3_view_tickets
-Measurement_9=|||12|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_9=S5_просмотр_купленных_билетов
-Measurement_10=|||10|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_10=S4_Выбор_места_вылета_и_посадки
-Measurement_11=|||26|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_11=S1_buy_ticket
-Measurement_12=|||32|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_12=S1_Выбор_места_вылета_и_посадки
-Measurement_13=|||28|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_13=Login
-Measurement_14=|||11|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_14="S1_Ввод данных карты и оплата"
-Measurement_15=|||14|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_15=S2_Ввод_данных_карты_и_оплата
-Measurement_16=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_16=S3_Flights
-Measurement_17=|||21|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_17=Logout
-Measurement_18=|||13|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_18="S5_Ввод данных карты и оплата"
-Measurement_19=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_19=S4_view_buy_ticket
-Measurement_20=|||26|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_20=S3_Выбор_места_вылета_и_посадки
-Measurement_21=|||22|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
-MeasurementFullPath_21=Action_Transaction
+Measurement_6=|||15|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_6=S4_Ввод_данных_карты_и_оплата
+Measurement_7=|||18|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_7=S3_view_tickets
+Measurement_8=|||12|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_8=S5_просмотр_купленных_билетов
+Measurement_9=|||32|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_9=S1_Выбор_места_вылета_и_посадки
+Measurement_10=|||28|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_10=Login
+Measurement_11=|||11|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_11="S1_Ввод данных карты и оплата"
+Measurement_12=|||14|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_12=S2_Ввод_данных_карты_и_оплата
+Measurement_13=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_13=S3_Flights
+Measurement_14=|||21|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_14=Logout
+Measurement_15=|||13|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_15="S5_Ввод данных карты и оплата"
+Measurement_16=|||9|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_16=S4_view_buy_ticket
+Measurement_17=|||26|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_17=S3_Выбор_места_вылета_и_посадки
+Measurement_18=|||22|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_18=Action_Transaction
 Description=Trans/Sec (FAIL)
 [28]
 MeasurementsDelimiter=|||
@@ -1989,17 +1989,7 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=5
-Measurement_0=|||13|||0|||1|||Not_In_Use|||0|||-1|||es_tr_traborted
-MeasurementFullPath_0=S2_buy_2tickets
-Measurement_1=|||9|||0|||1|||Not_In_Use|||0|||-1|||es_tr_traborted
-MeasurementFullPath_1=S3_view_tickets
-Measurement_2=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_traborted
-MeasurementFullPath_2=Action_Transaction
-Measurement_3=|||10|||0|||1|||Not_In_Use|||0|||-1|||es_tr_traborted
-MeasurementFullPath_3=S5_errbuy_buy_ticket_view
-Measurement_4=|||33|||0|||1|||Not_In_Use|||0|||-1|||es_tr_traborted
-MeasurementFullPath_4=S1_buy_ticket
+MeasurementCount=0
 Description=Total Stopped transactions graph
 [29]
 MeasurementsDelimiter=|||
@@ -3023,7 +3013,7 @@ Min__Y_Scale=0
 DefaultMsrAutoScale=1
 Granularities=1
 Is_Resource_Graph=1
-MeasurementCount=41
+MeasurementCount=42
 Measurement_0=|||9|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
 MeasurementFullPath_0="Page Reads/sec (Memory)"
 Measurement_1=|||19|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
@@ -3072,40 +3062,42 @@ Measurement_22=|||5|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
 MeasurementFullPath_22="Всего байтов исходящего трафика с момента запуска (Подключения IPsec)"
 Measurement_23=|||11|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
 MeasurementFullPath_23="Pool Paged Bytes (Memory)"
-Measurement_24=|||3|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_24="Processor Queue Length (System)"
-Measurement_25=|||24|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_25="Avg. Disk Queue Length (PhysicalDisk _Total)"
-Measurement_26=|||18|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_26="System Cache Resident Bytes (Memory)"
-Measurement_27=|||34|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_27="Среднее время чтения с диска (с) (Физический диск _Total)"
-Measurement_28=|||12|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_28="Page Faults/sec (Memory)"
-Measurement_29=|||4|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_29="Всего байтов входящего трафика с момента запуска (Подключения IPsec)"
-Measurement_30=|||2|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_30="Полученных пакетов/сек (Активность сетевой карты для каждого процессора _Total)"
-Measurement_31=|||22|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_31="% Idle Time (PhysicalDisk _Total)"
-Measurement_32=|||8|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_32="Pages/sec (Memory)"
-Measurement_33=|||10|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_33="Pool Nonpaged Bytes (Memory)"
-Measurement_34=|||5|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_34="Interrupts/sec (Processor _Total)"
-Measurement_35=|||2|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_35="% Interrupt Time (Processor _Total)"
-Measurement_36=|||33|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_36="% активности диска при чтении (Физический диск 0 E: C:)"
-Measurement_37=|||14|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_37="Pool Nonpaged Bytes (Server)"
-Measurement_38=|||17|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_38="Cache Bytes (Memory)"
-Measurement_39=|||26|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_39="Split IO/Sec (PhysicalDisk _Total)"
-Measurement_40=|||30|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_40="% работы в пользовательском режиме (Процессор _Total)"
+Measurement_24=|||0|||0|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_24="% использования выделенной памяти (Память)"
+Measurement_25=|||3|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_25="Processor Queue Length (System)"
+Measurement_26=|||24|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_26="Avg. Disk Queue Length (PhysicalDisk _Total)"
+Measurement_27=|||18|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_27="System Cache Resident Bytes (Memory)"
+Measurement_28=|||34|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_28="Среднее время чтения с диска (с) (Физический диск _Total)"
+Measurement_29=|||12|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_29="Page Faults/sec (Memory)"
+Measurement_30=|||4|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_30="Всего байтов входящего трафика с момента запуска (Подключения IPsec)"
+Measurement_31=|||2|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_31="Полученных пакетов/сек (Активность сетевой карты для каждого процессора _Total)"
+Measurement_32=|||22|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_32="% Idle Time (PhysicalDisk _Total)"
+Measurement_33=|||8|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_33="Pages/sec (Memory)"
+Measurement_34=|||10|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_34="Pool Nonpaged Bytes (Memory)"
+Measurement_35=|||5|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_35="Interrupts/sec (Processor _Total)"
+Measurement_36=|||2|||1|||10|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_36="% Interrupt Time (Processor _Total)"
+Measurement_37=|||33|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_37="% активности диска при чтении (Физический диск 0 E: C:)"
+Measurement_38=|||14|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_38="Pool Nonpaged Bytes (Server)"
+Measurement_39=|||17|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_39="Cache Bytes (Memory)"
+Measurement_40=|||26|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_40="Split IO/Sec (PhysicalDisk _Total)"
+Measurement_41=|||30|||1|||1|||DESKTOP-TO4IB68|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_41="% работы в пользовательском режиме (Процессор _Total)"
 Description=Displays a summary of the System Resources usage for each Windows based host.
 [53]
 MeasurementsDelimiter=|||
@@ -5630,7 +5622,7 @@ MonMachinePlatform=IntV1|14
 
 {ItemList
 CMPIListVersion=IntV1|1
-ListCount=IntV1|41
+ListCount=IntV1|42
 
 {MonItemPlus
 MonItemPlusVersion=IntV1|1
@@ -6246,6 +6238,21 @@ ObjectType=IntV1|0
 DisplayerName=StringV1|es_rm_svr_res_nt
 }
 }
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Memory|% Committed Bytes In Use|
+Name=StringV1|% использования выделенной памяти (Память)
+Data=StringV1|
+Description=StringV1|Процент использования выделенной памяти - это процентное отношение объема выделенной памяти (Committed Bytes) к пределу выделенной памяти (Commit Limit). Эта величина отражает реально используемый объем доступной виртуальной памяти. Учтите, что предел выделенной памяти может быть изменен, если файл подкачки (страничный файл) будет увеличен. Эта величина представляет собой конкретное текущее значение, и не является средним значением по некоторому интервалу времени.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
 }
 }
 }
@@ -6258,7 +6265,7 @@ ItemsNumber=IntV1|0
 }
 
 {ScenarioDiagnostics
-XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="5e0382f7e" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
+XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="5e0af3a4e" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
 }
 
 {ScenarioAlertsConfig
@@ -6386,14 +6393,14 @@ XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabl
 {ScenarioGroupsData
 
 {SCHED_GROUP_DATA
-SCHED_GROUP_NAME=s4_view_buy_ticket
+SCHED_GROUP_NAME=s5_errbuy_buy_ticket_view
 TEST_PERCENT_DISTRIBUTION=20,00
 SCHED_USE_ANY_HOST=0
 TEST_HOSTS_NAMES=localhost
 }
 
 {SCHED_GROUP_DATA
-SCHED_GROUP_NAME=s5_errbuy_buy_ticket_view
+SCHED_GROUP_NAME=s4_view_buy_ticket
 TEST_PERCENT_DISTRIBUTION=20,00
 SCHED_USE_ANY_HOST=0
 TEST_HOSTS_NAMES=localhost
@@ -6422,7 +6429,7 @@ TEST_HOSTS_NAMES=localhost
 }
 
 {ScenarioSLAConfig
-<?xml version="1.0" encoding="UTF-8"?><SLA Version="1.0"><TxList><Tx>S3_view_tickets</Tx><Tx>vuser_end_Transaction</Tx><Tx>S2_buy_2tickets</Tx><Tx>S3_просмотр_купленных_билетов</Tx><Tx>S5_просмотр_купленных_билетов</Tx><Tx>vuser_init_Transaction</Tx><Tx>S4_просмотр_купленных_билетов</Tx><Tx>S1_buy_ticket</Tx><Tx>Logout</Tx><Tx>S1_Выбор_места_вылета_и_посадки</Tx><Tx>S1_Ввод данных карты и оплата</Tx><Tx>S2_Ввод_данных_карты_и_оплата</Tx><Tx>S2_Выбор_места_вылета_и_посадки</Tx><Tx>S3_Выбор_места_вылета_и_посадки</Tx><Tx>S5_Ввод данных карты и оплата</Tx><Tx>S5_Выбор_места_вылета_и_посадки</Tx><Tx>S4_Выбор_места_вылета_и_посадки</Tx><Tx>S4_Ввод_данных_карты_и_оплата</Tx><Tx>S5_errbuy_buy_ticket_view</Tx><Tx>Action_Transaction</Tx><Tx>Login</Tx><Tx>S4_view_buy_ticket</Tx></TxList><SLARules><TrackingPeriodType>Default</TrackingPeriodType><TrackingPeriodValue></TrackingPeriodValue><TrackingPeriodTimeScale></TrackingPeriodTimeScale><RulesGroup Type="PercentileRule"><Name>Percentile Based Rules</Name><PercentileRule Name="transaction_response_time_percentile_Login"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>Login</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_Logout"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>Logout</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_LogOut"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>LogOut</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S1_Ввод данных карты и оплата"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S1_Ввод данных карты и оплата</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S1_Выбор_места_вылета_и_посадки"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S1_Выбор_места_вылета_и_посадки</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S2_intinerary"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S2_intinerary</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S2_Ввод_данных_карты_и_оплата"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S2_Ввод_данных_карты_и_оплата</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S2_Выбор_места_вылета_и_посадки"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S2_Выбор_места_вылета_и_посадки</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S3_Flights"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S3_Flights</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S3_itinerary"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S3_itinerary</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S4_Flights"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S4_Flights</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S4_Itinerary"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S4_Itinerary</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S4_Payment"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S4_Payment</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S5_Flights"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S5_Flights</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S5_itinerary"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S5_itinerary</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S5_Sold"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S5_Sold</SubMeasurement></PercentileRule></RulesGroup></SLARules></SLA>
+<?xml version="1.0" encoding="UTF-8"?><SLA Version="1.0"><TxList><Tx>S3_view_tickets</Tx><Tx>vuser_end_Transaction</Tx><Tx>S2_buy_2tickets</Tx><Tx>S3_просмотр_купленных_билетов</Tx><Tx>S5_просмотр_купленных_билетов</Tx><Tx>vuser_init_Transaction</Tx><Tx>S4_просмотр_купленных_билетов</Tx><Tx>S1_buy_ticket</Tx><Tx>Logout</Tx><Tx>S1_Выбор_места_вылета_и_посадки</Tx><Tx>S1_Ввод данных карты и оплата</Tx><Tx>S2_Ввод_данных_карты_и_оплата</Tx><Tx>S2_Выбор_места_вылета_и_посадки</Tx><Tx>S3_Выбор_места_вылета_и_посадки</Tx><Tx>S5_Ввод данных карты и оплата</Tx><Tx>S5_Выбор_места_вылета_и_посадки</Tx><Tx>S4_Выбор_места_вылета_и_посадки</Tx><Tx>S4_Ввод_данных_карты_и_оплата</Tx><Tx>S5_errbuy_buy_ticket_view</Tx><Tx>Action_Transaction</Tx><Tx>Login</Tx><Tx>S4_view_buy_ticket</Tx></TxList><SLARules><TrackingPeriodType>Manual</TrackingPeriodType><TrackingPeriodValue>5</TrackingPeriodValue><TrackingPeriodTimeScale>Second</TrackingPeriodTimeScale><RulesGroup Type="PercentileRule"><Name>Percentile Based Rules</Name><PercentileRule Name="transaction_response_time_percentile_Login"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>Login</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_Logout"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>Logout</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S1_Ввод данных карты и оплата"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S1_Ввод данных карты и оплата</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S1_Выбор_места_вылета_и_посадки"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S1_Выбор_места_вылета_и_посадки</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S2_Ввод_данных_карты_и_оплата"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S2_Ввод_данных_карты_и_оплата</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S2_Выбор_места_вылета_и_посадки"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S2_Выбор_места_вылета_и_посадки</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S3_Выбор_места_вылета_и_посадки"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S3_Выбор_места_вылета_и_посадки</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S3_просмотр_купленных_билетов"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S3_просмотр_купленных_билетов</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S4_Ввод_данных_карты_и_оплата"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S4_Ввод_данных_карты_и_оплата</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S4_Выбор_места_вылета_и_посадки"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S4_Выбор_места_вылета_и_посадки</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S4_просмотр_купленных_билетов"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S4_просмотр_купленных_билетов</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S5_Ввод данных карты и оплата"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S5_Ввод данных карты и оплата</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S5_Выбор_места_вылета_и_посадки"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S5_Выбор_места_вылета_и_посадки</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_S5_просмотр_купленных_билетов"><Percentage>90</Percentage><Value>5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>S5_просмотр_купленных_билетов</SubMeasurement></PercentileRule></RulesGroup></SLARules></SLA>
 }
 
 {ScenarioSEVConfig
@@ -6445,6 +6452,11 @@ localhost=00000000-0000-0000-0000-000000000000
 }
 
 {LocAssignedToGroup
+S1_buy_ticket=00000000-0000-0000-0000-000000000000
+S2_buy_2tickets=00000000-0000-0000-0000-000000000000
+S3_view_tickets=00000000-0000-0000-0000-000000000000
+S4_view_buy_ticket=00000000-0000-0000-0000-000000000000
+S5_errbuy_buy_ticket_view=00000000-0000-0000-0000-000000000000
 }
 
 {LocAssignedToTest
